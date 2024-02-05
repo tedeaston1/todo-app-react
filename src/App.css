@@ -1,38 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: #4d4d4d;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.todo-wrapper {
+  background: #ededed;
+  border: 1px solid slategray;
+  margin-top: 5rem;
+  padding: 2rem;
+  border-radius: 2px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.todo-form {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.todo-input {
+  outline: none;
+  border: 1px solid slategrey;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 300px;
+  border-radius: 2px 0 0 2px;
+}
+
+.todo-btn {
+  border: none;
+  padding: 0.55rem;
+  cursor: pointer;
+  background: #4d84bf;
   color: white;
+  border-radius: 0 2px 2px 0;
 }
 
-.App-link {
-  color: #61dafb;
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #4d84bf;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 2px;
+  margin-bottom: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fa-trash {
+  margin-left: 0.75rem;
+}
+
+.incompleted {
+  color: white;
+  cursor: pointer;
+}
+
+.completed {
+  color: #c9c9c9;
+  cursor: pointer;
+  text-decoration: line-through;
+}
+
+.edit-icon,
+.delete-icon {
+  cursor: pointer;
+}
+
+.edit-todo-container{
+  justify-content: space-between;
+  align-items: center;
+  background: #4d84bf;
+  color: #fff;
+  padding: 0.75rem 1rem 1rem;
+  border-radius: 2px;
+  margin-bottom: 1rem;
+}
+
+.edit-todo-form{
+   height: 30px;
+   padding-left: none;
+}
+.edit-todo-input {
+  outline: none;
+  border: 1px solid slategrey;
+  padding: 0.2rem;
+  width:80%;
+  margin-top: 0.1rem;
+  margin-bottom: 1rem;
+
+  border-radius: 2px 0 0 2px;
+}
+
+.edit-todo-btn {
+  border: none;
+  width: 20%;
+  padding: 0.55rem;
+  cursor: pointer;
+  background: #4d84bf;
+  color: white;
+  border-radius: 0 2px 2px 0;
 }
